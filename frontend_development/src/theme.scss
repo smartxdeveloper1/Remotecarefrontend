@@ -1,0 +1,42 @@
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config($font-family: '"Poppins:ital", sans-serif;');
+@include mat-core($custom-typography);
+
+
+html, body { height: 100%; }
+
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+button:focus{
+    outline: 0;
+}
+
+$primary: var(--primary-color);
+.mat-toolbar.mat-primary {
+    background: $primary;
+    color: #fff;
+}
+.mat-icon.mat-primary {
+    color: $primary;
+}
+
+.mat-drawer {
+    background: $primary !important;
+}
+h1 {
+    color: white;
+}
+
+.container  .material-icons{
+    color: $primary;
+}
+.active-list-item {
+    background-color: grey !important;
+}
+.overlay{
+    top: auto !important;
+}
+
+
